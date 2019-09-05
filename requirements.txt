@@ -1,0 +1,8 @@
+# The reason we do this is to take a minor version which is the last number of version
+# and makesure that we install the latest available version every docker image run
+# because that typically the version that has security featrues (updated) and security fixes
+# on previos minor verson.
+# And to make sure that our django not updated to newest version, so it's don't break our project
+Django>=2.2.5,<2.3.0
+
+djangorestframework>=3.10.3,<3.11.0
