@@ -26,7 +26,6 @@ class AdminSiteTests(TestCase):
         self.assertContains(res, self.user.name)
         self.assertContains(res, self.user.email)
 
-
     def test_user_change_page(self):
         """Test that user edit page works"""
         url = reverse("admin:core_user_change", args=[self.user.id])
